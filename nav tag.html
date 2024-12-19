@@ -1,0 +1,66 @@
+<html>
+<head><title>Resposive navabar</title>
+<meta charset="utf-8">
+<meta name="viewport"content="wdith=device-width,initial-scale=1.0">
+
+<style>
+body{border:2px solid black;background:pink;}
+*{margin:0px;padding:0px;box-sizing:border-box;}
+nav{background-color:red;height:80px;display:flex;justify-content:space-around;align-items:center;padding:0px 50px 0px 100px;margin-top:25px;position:relative;}
+nav .Logo{color:black;font-family:algerian;font-size:33px;border:5px solid white;border-radius:10px;}
+
+nav ul {list-style:none;display:flex;padding:2px;}
+nav ul li{margin:0px 5px 7px;list-style:none;margin-top:10px;font-size:25px;border:2px solid green;background:yellow;}
+nav ul li .a{position:absolute;display:none;border:2px solid black;}
+nav ul .a li a{color:red;text-decoration:none;font-size:25px;font-weight:500;letter-spacing:2px;background:white;padding:0px 2px;border-radius:10px;transition:all 0.5 ease;}
+nav ul li:hover{padding:2px;border-radius:20px;}
+nav ul li:hover .a {background:rgb(0,140,0);color:black;display:block;background:orange;margin-top:2px;}
+nav ul li:hover .a a:hover{color:Black;}
+nav ul ul .a li li{border:1px solid blue;color:black;background:orange;display:none;}
+nav ul ul.a ul li:hover{border-radius:10px;display:block;background:orange;position:absolute;}
+
+@media(max-width:600px)(nav ul{position:fixed;background-color:yellow;border:10px doubleblue;display:block;height:40vh;width:100%;top:80px;left:0px;}nav ul li{margin:10px 20%;}nav ul li a{color:gray;background:red;}nav.logo{color:blue;}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="Logo">NCSC</div>
+<ul><li><a class="active"href="#">Subject</a>
+<ul class="a"><li><a href="#">Punjabi</a>
+<ul><li>Genral punjabi</li>
+<li>Eleactive punjabi</li></ul>
+</li>
+<li><a href="#">English</a></li>
+<li><a href="#">Hindi</a></li>
+<li><a href="#">Math</a></li></ul>
+</li>
+
+
+<li>color
+<ul class="a"><li><a href="#">White</a></li>
+<li><a href="#">Green</a></li>
+<li><a href="#">BLack</a></li>
+<li><a href="#">Yellow</a></li></ul>
+</li>
+
+<li>Food
+<ul class="a"><li><a href="#">Junk Food</a></li>
+<li><a href="#">Fast Food</a></li>
+<li><a href="#">Vegitable Food</a></li></ul>
+
+</li>
+<li>Vegitable
+<ul class="a"><li><a href="#">Union</a></li>
+<li><a href="#">Tomato</a></li>
+<li><a href="#">Potato</a></li>
+<li><a href="#">Peas</a></li></ul></li>
+<li>Distric
+<ul class="a"><li><a href="#">Ludhiana</a></li>
+<li><a href="#">Barnala</a></li>
+<li><a href="#">Moga</a></li>
+<li><a href="#">Patiala</a></li></ul></li>
+</ul>
+</nav>
+</body>
+</html>
